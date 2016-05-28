@@ -80,3 +80,7 @@ fabric.properties
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+.idea/copyright/profiles_settings.xml
+.idea/SIBU.iml
+.idea/deployment.xml
+.idea/modules.xml
