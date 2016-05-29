@@ -2,13 +2,13 @@
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <title> SITPOLI - Login </title>
+        <title> SIBU - Login </title>
         <?php include 'header.html'; ?>
         
 
     </head>
     <body>
-        <form  class="login" method="POST" action = "../controler/login.php">
+        <form  class="login" method="POST" action = "../Negocio/validar.php">
             <h1> Login </h1>
             <input name="correo" type="email" size="65" class="login-input" placeholder="Correo electrónico" required autofocus/>
             <input name="clave" type="password" size="30" class="login-input" placeholder="Contraseña" required /> <br /> <br />
