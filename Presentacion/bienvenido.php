@@ -11,6 +11,10 @@
         <meta charset="utf-8" />
     </head>
     <body>
+    
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="content">
         <script language="javascript" type="text/javascript">
 
             $(function() {
@@ -54,8 +58,9 @@
             </ul>
             <div style="clear: both"></div>
         </div>
-    <footer class="about">
+
+        </div>
         <?php include 'footer.html'; ?>
-    </footer>
+    </div>
     </body>
 </html>

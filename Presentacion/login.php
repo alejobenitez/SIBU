@@ -8,7 +8,10 @@
 
     </head>
     <body>
-        <form  class="login" method="POST" action = "../Negocio/validar.php">
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="content">
+        <form method="POST" action = "../Negocio/validar.php" class="basic-grey">
             <h1> Login </h1>
             <input name="correo" type="email" size="65" class="login-input" placeholder="Correo electrónico" required autofocus/>
             <input name="clave" type="password" size="30" class="login-input" placeholder="Contraseña" required /> <br /> <br />
@@ -16,8 +19,8 @@
             <p class="login-help"><a href="registro.php"> No tienes cuenta aún? Registrate </a> </p>
             <p class="login-help"><a href="recordar.php">Recordar contraseña?</a></p>
         </form>
-        <footer class="about">
+        </div>
             <?php include 'footer.html'; ?>
-        </footer>
+    </div>
     </body>
 </html>

@@ -54,15 +54,15 @@ else
     <?php include 'header.html'; ?>
 </head>
 <body>
-<h1> RESTABLECER CONTRASEÑA </h1>
-  <form action="../Presentacion/restablecer.php" method="post" class="container" id="reset" >
-    <p><input id="password" name="password" type="password" placeholder="Escriba la nueva contrasena">
-    <p><input id="password2" name="password2" type="password" placeholder="Escriba de nuevo su contrasena">
-    <input name="action" type="hidden" value="<?php echo $encrypt;?>" /></p>
-    <p><input type="submit" value="Restablecer contraseña"/></p>
+
+  <form action="../Presentacion/restablecer.php" method="post" class="basic-grey" id="reset" >
+      <h1> RESTABLECER CONTRASEÑA </h1>
+      <p><input id="password" name="password" type="password" placeholder="Escriba la nueva contrasena"></p>
+      <p><input id="password2" name="password2" type="password" placeholder="Escriba de nuevo su contrasena"></p>
+      <p><input name="action" type="hidden" value="<?php echo $encrypt;?>" /></p>
+      <p><input type="submit" value="Restablecer contraseña"/></p>
   </form>
 
-<footer class="about">
     <?php include 'footer.html'; ?>
-</footer>
+
 </body>
