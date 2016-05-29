@@ -84,3 +84,6 @@ fabric.properties
 .idea/SIBU.iml
 .idea/deployment.xml
 .idea/modules.xml
+.idea/php.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
