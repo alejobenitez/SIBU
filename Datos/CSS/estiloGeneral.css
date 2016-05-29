@@ -1,0 +1,16 @@
+body {
+    background: ##809991;
+    background-image: url("../Images/zenbg-1.png"), url("../Images/zenbg-2.png");
+    background-repeat: repeat-x, repeat;
+    font: normal 11px Verdana, Arial, sans-serif;
+}
+img.Logo{
+    width: 300px;
+    text-align: center;
+    border: 5px solid #809991;
+    border-radius: 4px;
+    padding: 5px;
+}
+img.poli{
+    width: 150px;
+}
