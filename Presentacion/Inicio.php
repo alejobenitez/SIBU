@@ -3,12 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <title> SIBU </title>
-    <?php include 'header.html'; ?>
-
+    
 </head>
 <body>
     <div id="wrapper">
-        <div id="header"></div>
+        <div id="header"><?php include 'header.html'; ?></div>
         <div id="content">
         <form class="basic-grey" name="registro" method="POST" action="..\Negocio\insertarUsuario.php" onSubmit="return validar_Clave()">
             <h1>BIENVENIDO A SIBU</h1>

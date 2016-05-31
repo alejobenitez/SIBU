@@ -17,20 +17,22 @@
 			exit; 
 		} 
 	}
+
 	$query = "SELECT * FROM usuario WHERE CORREO='".$_SESSION['User']."'";
 	$result = mysqli_query($conex,$query);
     $Results = mysqli_fetch_array($result);
+
 	if(count($Results)>=1)
     {
 		$usuario = $Results["NOMBRE"]." ".$Results["APELLIDO"];
-
 	}
+
     function Menu(){
-
-       echo "<div class='menu'>";
-       echo "<a href='../Negocio/logout.php'> Cerrar sesión </a>";
-       echo "</div>";
-
+        global $usuario;
+        echo "<div class='menu'>";
+        echo $usuario;
+        echo "<a href='../Negocio/logout.php'> Cerrar sesión </a>";
+        echo "</div>";
 	}
 
 ?>
