@@ -36,7 +36,7 @@
                 Descripcion:<br>
                 <?php echo $Results["DESCRIPCION"]; ?>
                  <br clear="all">
-
+                <br>Calificacion:<br>
                 <p class="clasificacion" align="left">
                     <input id="radio1" type="radio" name="calificacion" value="5">
                         <label for="radio1">★</label>
@@ -50,7 +50,7 @@
                         <label for="radio5">★</label>
                 </p>
                 Opinion:<br>
-                <textarea name="opinion" rows="4" cols="50"></textarea>
+                <textarea name="opinion" rows="4" cols="50" required></textarea>
                 <br>
                 <input type="hidden" name="codMaterial" value="<?php echo $_GET['codMaterial']?>">
                 <input type="submit" value="Enviar" class="login-submit"><br><br>

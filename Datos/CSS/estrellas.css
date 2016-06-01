@@ -9,6 +9,7 @@ label {
 .clasificacion {
     direction: rtl;
     unicode-bidi: bidi-override;
+    font: 20px Georgia, "Times New Roman", Times, serif;
 }
 
 label:hover,

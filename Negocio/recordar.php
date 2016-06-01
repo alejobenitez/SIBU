@@ -23,7 +23,7 @@ if (isset($_POST['correo']))
                 $to=$email;
                 $subject="Recuperacion contrasena";
                 $from = 'admin@SIBU.edu.co';
-                $body='Hola, <br/> <br/>Su usuario es: '.$email.'<br><br>Haga click aca para restablecer su contrase&ntildea http://190.146.217.55:8383/SIBU/Presentacion/restablecer.php?encrypt='.$encrypt.'&action=reset   <br/> <br/>--<br>SIBU<br>Departamento de Sistemas.';
+                $body='Hola, <br/> <br/>Su usuario es: '.$email.'<br><br>Haga click aca para restablecer su contrase&ntildea http://sibu.sytes.net/SIBU/Presentacion/restablecer.php?encrypt='.$encrypt.'&action=reset   <br/> <br/>--<br>SIBU<br>Departamento de Sistemas.';
                 $headers = "From: SIBU<" . strip_tags($from) . ">\r\n";
                 $headers .= "Reply-To: ". strip_tags($from) . "\r\n";
                 $headers .= "MIME-Version: 1.0\r\n";

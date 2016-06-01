@@ -117,7 +117,7 @@ img.poli{
 .basic-grey .button {
     background: #E27575;
     border: none;
-    padding: 10px 25px 10px 25px;
+    padding: 10px 250px 10px 250px;
     color: #FFF;
     box-shadow: 1px 1px 5px #B6B6B6;
     border-radius: 3px;
@@ -130,6 +130,35 @@ img.poli{
 .basic-grey img{
     border-style: groove;
 }
+table {
+    margin: 0 auto;
+    border:none;
+    border-collapse: collapse;
+}
+
+td {
+    background: #F7F7F7; /* Lighter grey background */
+    text-align: center; /* Center our text */
+    border-left: 1px solid #5f5f5f;
+    width: 100px;
+    height: 180px;
+    empty-cells: hide;
+}
+table td:first-child {
+    border-left: none;
+}
+th {
+    background: #F7F7F7; /* Lighter grey background */
+    text-align: center; /* Center our text */
+    empty-cells: show;
+}
+tr {
+    background: #F7F7F7; /* Lighter grey background */
+    text-align: center; /* Center our text */
+    empty-cells: show;
+}
+
+
 .menu {
     padding: 8px 10px;
     text-align: right;
@@ -167,4 +196,48 @@ img.poli{
 }
 p.espacioLinea{
     line-height: 200%;
+}
+div.galeria {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 150px;
+    background-color: #f7f7f7;
+    height: 200px;
+}
+
+div.galeria:hover {
+    border: 1px solid #777;
+}
+
+div.galeria img {
+    width: 124px;
+    height: 160px;
+    border-style: solid;
+}
+
+div.galeria a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+div.galeria {
+    padding: 15px;
+    text-align: center;
+}
+
+.rating_bar {
+    width: 80px;
+    height: 16px;
+    background: url(../images/stars.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    text-align: left;
+}
+.rating {
+    height: 16px;
+    background: url(../images/stars.png);
+    background-position: 0 -16px;
+    background-repeat: repeat-x;
 }
