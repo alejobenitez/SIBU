@@ -105,15 +105,15 @@
                 <div style="clear: both"></div>
             </div>
 
-            <form action="" method="GET">
-                <table>
+            <form action="" method="GET" >
+                <table class="tabla">
                     <tr>
                         <th colspan="5"><h2>Filtrar Contenido</h2></th>
                     </tr>
                     <tr>
                         <th>
                             <select onchange="this.form.submit()" name="universidad">
-                            <option value="" selected>-- Universidad -- </option>
+                            <option value="" selected>Universidad</option>
                             <?php
                             $query1 = "SELECT * FROM universidad ORDER BY NOMBRE ASC ";
                             $result1 = mysqli_query($conex,$query1);
@@ -143,7 +143,7 @@
                         </th>
                         <th>
                         <select onchange="this.form.submit()" name="tipoMaterial">
-                            <option value="" selected>-- Tipo de Material -- </option>
+                            <option value="" selected>Tipo de Material </option>
                             <?php
 
                             $query2 = "SELECT * FROM tipo_material ORDER BY NOMBRE ASC ";
@@ -173,7 +173,7 @@
                         </th>
                         <th>
                             <select onchange="this.form.submit()" name="tema">
-                                <option value="" selected>-- Tema/Categoria -- </option>
+                                <option value="" selected>Tema/Categoria</option>
                                 <?php
 
                                 $query3 = "SELECT * FROM tema_categoria ORDER BY NOMBRE ASC ";
@@ -205,7 +205,7 @@
                         <th>
 
                             <select onchange="this.form.submit()" name="calificacion">
-                                <option value="" selected>-- Todas -- </option>
+                                <option value="" selected>Calificación/Todas</option>
                                 <?php
 
                                 $queryCali = "SELECT * FROM calificacion";
@@ -235,7 +235,7 @@
                             </select>
                         </th>
                         <th>
-                            <a href='../Presentacion/bienvenido.php' class ='button'> Reiniciar Filtro </a></td>
+                            <a href="../Presentacion/bienvenido.php" class="myButton">Reiniciar Filtro</a>
 
                         </th>
                     </tr>
@@ -282,7 +282,7 @@
                             }
                             $result4 = mysqli_query($conex,$query4);
                             if(mysqli_num_rows($result4)>=1) {
-                                
+                                echo "<div class='imagenes'>";
                                 while ($Results = mysqli_fetch_array($result4)) {
 
                                     $query5 = "SELECT material.TITULO,material.RUTA_IMAGEN,calif_material.COD_MATERIAL, AVG(calif_material.ID_CALIFICACION) AS PROMEDIO
@@ -291,15 +291,12 @@
 
                                     $result5 = mysqli_query($conex,$query5);
                                     $Results5 = mysqli_fetch_array($result5);
+                                    ;
 
                                     echo "<div class='galeria'>";
                                     echo "<a href='calificacion.php?codMaterial=" . $Results['COD_MATERIAL'] . "' title='' target='_self'>";
                                     echo "<img width='124' height='160'  src='../Datos/imgMaterial/" . $Results['RUTA_IMAGEN'] . ".jpg' alt='" . $Results['TITULO'] . "'>";
-
-                                    //echo "<div class='desc'>".$Results['TITULO']."</div>";
                                     echo "<div class='rating_bar'>";
-                                   // asdf$promedio = ($Results5["PROMEDIO"] * 100) / 5;
-//asdfecho "<a href='calificacion.php?codMaterial=".$Results['COD_MATERIAL']."' title='' target='_self'><img src='../Datos/imgMaterial/".$Results['RUTA_IMAGEN'].".jpg' width='124' height='160' alt='".$Results['TITULO']."'/><div class='rating_bar'><div  class='rating' style='width:" .$promedio2. "%'></div></div>".$Results['TITULO']."</a>";
                                     if(count($Results5)>=1) {
                                         $promedio = ($Results5["PROMEDIO"] * 100) / 5;
                                         echo "<div  class='rating' style='width:" .$promedio. "%'></div>";
@@ -310,12 +307,14 @@
 
 
                                 }
+
                             }
                         }
+                        echo "</div>";
                         ?>
 
         </div>
-        <?php //include 'footer.html'; ?>
+        <?php include 'footer.html'; ?>
     </div>
     </body>
 </html>

@@ -69,7 +69,6 @@ img.poli{
     font-size: 11px;
 }
 .basic-grey label {
-    /*display: block;*/
     margin: 0px;
 }
 .basic-grey label>span {
@@ -100,8 +99,8 @@ img.poli{
     padding: 5px 3px 3px 5px;
 }
 .basic-grey select {
-    /*background: #FFF url('down-arrow.png') no-repeat right;
-    background: #FFF url('down-arrow.png') no-repeat right);*/
+    background: #FFF url('../Images/down-arrow.png') no-repeat right;
+    background: #FFF url('../Images/down-arrow.png') no-repeat right;
     appearance:none;
     -webkit-appearance:none;
     -moz-appearance: none;
@@ -135,7 +134,20 @@ table {
     border:none;
     border-collapse: collapse;
 }
+.tabla table{
 
+}
+.tabla select {
+    appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    height: 35px;
+    line-height: 25px;
+}
+.tabla h2{
+    font: bold 25px Verdana, Arial, sans-serif;
+
+}
 td {
     background: #F7F7F7; /* Lighter grey background */
     text-align: center; /* Center our text */
@@ -183,7 +195,7 @@ tr {
 
 .menu a:hover{
     text-decoration: underline;
-    color: #d70e00
+    color: #000000
 }
 .line-separator{
 
@@ -198,12 +210,20 @@ p.espacioLinea{
     line-height: 200%;
 }
 div.galeria {
-    margin: 5px;
+   /* margin: 5px;
     border: 1px solid #ccc;
-    float: left;
+    /*float: left;
     width: 150px;
     background-color: #f7f7f7;
+    height: 200px;*/
+    width: 150px;
     height: 200px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    background-color: #f7f7f7;
+    padding: 15px;
+    text-align: center;
 }
 
 div.galeria:hover {
@@ -222,10 +242,6 @@ div.galeria a{
     font-size: 12px;
 }
 
-div.galeria {
-    padding: 15px;
-    text-align: center;
-}
 
 .rating_bar {
     width: 80px;
@@ -240,4 +256,50 @@ div.galeria {
     background: url(../images/stars.png);
     background-position: 0 -16px;
     background-repeat: repeat-x;
+}
+.myButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+    box-shadow:inset 0px 1px 0px 0px #cf866c;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+    background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+    background-color:#d0451b;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #942911;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #854629;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+    background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+    background-color:#bc3315;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+div.imagenes{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    height: auto;
+    background-color: #e6e6e6;
 }
