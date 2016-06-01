@@ -30,9 +30,11 @@
     function Menu(){
         global $usuario;
         echo "<div class='menu'>";
-        echo $usuario;
-        echo "<a href='../Negocio/logout.php'> Cerrar sesión </a>";
-        echo "</div>";
+        echo $usuario." ";
+		
+        echo "<a href='../Negocio/logout.php' class='myButton'> Cerrar sesión </a>";
+		echo "</div>";
+
 	}
 
 ?>
